@@ -1,0 +1,23 @@
+{
+	"projectName": "ABot",
+	"bots": [
+		{
+			"name":"abot",
+			"hookUrl": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=[your key]",
+			"triggerType": "CRON"
+		}
+	],
+	"datasource": [
+		{
+			"type": "mysql",
+			"sourceName": "abot",
+			"config": {
+				"address": "localhost:3306",
+				"database": "abot",
+				"user": "root",
+				"password": "root",
+				"extParams": "charset=utf8mb4&parseTime=True&loc=Local"
+			}
+		}
+	]
+}
